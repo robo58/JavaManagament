@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1326.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.UpdateController">
+   <children>
+      <Pane prefHeight="181.0" prefWidth="1326.0" style="-fx-background-color: #000;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="70.0" layoutY="69.0" text="Update" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Button layoutX="1164.0" layoutY="73.0" mnemonicParsing="false" onMouseClicked="#home" prefHeight="44.0" prefWidth="80.0" text="Home" />
+         </children>
+      </Pane>
+      <Pane layoutY="181.0" prefHeight="545.0" prefWidth="663.0" style="-fx-background-color: grey;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="663.0" AnchorPane.topAnchor="181.0">
+         <children>
+            <Label layoutX="175.0" layoutY="14.0" text="Add to Timetable">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="drop_year" layoutX="312.0" layoutY="91.0" onAction="#Weekset" prefHeight="44.0" prefWidth="141.46875" />
+            <Label layoutX="170.0" layoutY="102.0" text="Choose year">
+               <font>
+                  <Font name="SansSerif Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="170.0" layoutY="170.0" text="Choose week">
+               <font>
+                  <Font name="SansSerif Regular" size="20.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="drop_week" disable="true" layoutX="312.0" layoutY="159.0" onAction="#Dayset" prefHeight="44.0" prefWidth="141.46875" />
+            <Label layoutX="170.0" layoutY="238.0" text="Choose day">
+               <font>
+                  <Font name="SansSerif Regular" size="20.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="drop_day" disable="true" layoutX="312.0" layoutY="227.0" onAction="#ClassSet" prefHeight="44.0" prefWidth="141.46875" />
+            <ChoiceBox fx:id="drop_class" disable="true" layoutX="312.0" layoutY="295.0" onAction="#hourStartSet" prefHeight="44.0" prefWidth="141.46875" />
+            <Label layoutX="170.0" layoutY="306.0" text="Choose class">
+               <font>
+                  <Font name="SansSerif Regular" size="20.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="drop_starts" disable="true" layoutX="131.0" layoutY="408.0" onAction="#hourEndSet" prefWidth="150.0" />
+            <ChoiceBox fx:id="drop_ends" disable="true" layoutX="344.0" layoutY="408.0" onAction="#btnEnable" prefWidth="150.0" />
+            <Label layoutX="146.0" layoutY="362.0" text="Starts at">
+               <font>
+                  <Font name="SansSerif Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="359.0" layoutY="362.0" text="Ends at">
+               <font>
+                  <Font name="SansSerif Regular" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_update" disable="true" layoutX="242.0" layoutY="458.0" mnemonicParsing="false" onMouseClicked="#addTimetable" prefHeight="44.0" prefWidth="141.0" text="Add" />
+         </children>
+      </Pane>
+      <Pane layoutX="663.0" layoutY="181.0" prefHeight="545.0" prefWidth="663.0" style="-fx-background-color: lightgray;">
+         <children>
+            <Label layoutX="89.0" layoutY="15.0" text="Update Timetable">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="drop_year1"  disable="true" layoutX="312.0" layoutY="91.0" onAction="#Weekset1" prefHeight="44.0" prefWidth="141.46875" />
+            <Label layoutX="170.0" layoutY="102.0" text="Choose year">
+               <font>
+                  <Font name="SansSerif Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="170.0" layoutY="170.0" text="Choose week">
+               <font>
+                  <Font name="SansSerif Regular" size="20.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="drop_week1" disable="true" layoutX="312.0" layoutY="159.0" onAction="#Dayset1" prefHeight="44.0" prefWidth="141.46875" />
+            <Label layoutX="170.0" layoutY="238.0" text="Choose day">
+               <font>
+                  <Font name="SansSerif Regular" size="20.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="drop_day1" disable="true" layoutX="312.0" layoutY="227.0" onAction="#ClassSet1" prefHeight="44.0" prefWidth="141.46875" />
+            <ChoiceBox fx:id="drop_class1" disable="true" layoutX="312.0" layoutY="295.0" onAction="#hourStartSet1" prefHeight="44.0" prefWidth="141.46875" />
+            <Label layoutX="170.0" layoutY="306.0" text="Choose class">
+               <font>
+                  <Font name="SansSerif Regular" size="20.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="drop_starts1" disable="true" layoutX="131.0" layoutY="408.0" onAction="#hourEndSet1" prefWidth="150.0" />
+            <ChoiceBox fx:id="drop_ends1" disable="true" layoutX="344.0" layoutY="408.0" prefWidth="150.0" />
+            <Label layoutX="146.0" layoutY="362.0" text="Starts at">
+               <font>
+                  <Font name="SansSerif Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="359.0" layoutY="362.0" text="Ends at">
+               <font>
+                  <Font name="SansSerif Regular" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_update1" disable="true" layoutX="242.0" layoutY="458.0" mnemonicParsing="false" onMouseClicked="#updateTimetable" prefHeight="44.0" prefWidth="141.0" text="Update" />
+            <Button fx:id="btn_delete" disable="true" layoutX="494.0" layoutY="91.0" mnemonicParsing="false" onMouseClicked="#deleteTimetable" prefHeight="44.0" prefWidth="141.0" text="Delete" />
+            <ChoiceBox fx:id="drop_timetable" layoutX="494.0" layoutY="41.0" onAction="#chooseTT" prefHeight="44.0" prefWidth="141.46875" />
+            <Label layoutX="487.0" layoutY="14.0" text="Choose timetable">
+               <font>
+                  <Font name="SansSerif Regular" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

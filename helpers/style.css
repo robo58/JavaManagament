@@ -1,0 +1,70 @@
+#root{
+    -fx-pref-width: 950px;
+    -fx-pref-height: 650px;
+}
+
+#nav-ish{
+    -fx-pref-height: 170px;
+    -fx-background-color: #000;
+}
+
+#nav-title{
+    -fx-font-size: 30px;
+  -fx-text-fill: white;
+}
+
+.home {
+  background-color: blue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.home:hover {
+  background-color: red;
+}
+
+.button {
+  -fx-font-weight: bold;
+  -fx-background-color: grey;
+  -fx-background-radius: 22;
+  -fx-font-size: 16;
+  -fx-text-fill: white;
+}
+
+.button:hover {
+   -fx-font-weight: bold;
+   -fx-background-color: white;
+   -fx-background-radius: 22;
+   -fx-font-size: 16;
+   -fx-text-fill: #000;
+   -fx-border-color: #000;
+   -fx-border-radius:20;
+   -fx-border-width: 3;
+}
+
+.button: pressed{
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-background-radius: 22;
+    -fx-font-size: 16;
+    -fx-text-fill: #000;
+    -fx-border-color: #000;
+    -fx-border-radius:20;
+    -fx-border-width: 3;
+     -fx-rotate: 10;
+}
+
+#home{
+    -fx-pref-width: 80px;
+        -fx-pref-height: 40px;
+}
+
+#text {
+ -fx-font-smoothing-type: lcd;
+ -fx-fill: white;
+ -fx-font-size: 11pt;
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="868.0" style="-fx-background-color: linear-gradient(white,grey);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.newClassController">
+   <children>
+      <Text layoutX="367.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add class">
+         <font>
+            <Font name="SansSerif Bold" size="35.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tf_name" layoutX="477.0" layoutY="98.0" prefHeight="41.0" prefWidth="165.0" />
+      <TextField fx:id="tf_ects" layoutX="477.0" layoutY="163.0" prefHeight="41.0" prefWidth="165.0" />
+      <Label layoutX="227.0" layoutY="98.0" text="Class name:">
+         <font>
+            <Font name="SansSerif Regular" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="227.0" layoutY="163.0" text="ECTS:">
+         <font>
+            <Font name="SansSerif Regular" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="227.0" layoutY="293.0" text="Teacher's name:">
+         <font>
+            <Font name="SansSerif Regular" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="227.0" layoutY="228.0" text="Semester:">
+         <font>
+            <Font name="SansSerif Regular" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_semester" layoutX="477.0" layoutY="228.0" prefHeight="41.0" prefWidth="165.0" />
+      <ChoiceBox fx:id="drop_teacher" layoutX="477.0" layoutY="293.0" onAction="#setLabel" prefHeight="41.0" prefWidth="41.0" />
+      <Button layoutX="368.0" layoutY="381.0" mnemonicParsing="false" onMouseClicked="#addClass" prefHeight="41.0" prefWidth="165.0" text="Add" />
+      <Label fx:id="lab_teacher" layoutX="519.0" layoutY="296.0" prefHeight="36.0" prefWidth="274.0" text="Select Teacher..">
+         <font>
+            <Font name="SansSerif Regular" size="30.0" />
+         </font>
+      </Label>
+   </children>
+   
+</AnchorPane>

@@ -7,7 +7,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="639.0" style="-fx-background-color: linear-gradient(white,grey);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.RegisterController">
+<AnchorPane fx:id="rootEl" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#setValues" prefHeight="520.0" prefWidth="639.0" style="-fx-background-color: linear-gradient(white,grey);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.updateTeacherController">
    <children>
       <Label layoutX="80.0" layoutY="213.0" text="Email:" AnchorPane.leftAnchor="80.0">
          <font>
@@ -21,8 +21,8 @@
       </Label>
       <TextField fx:id="tf_email" layoutX="232.0" layoutY="216.0" prefHeight="25.0" prefWidth="190.0" />
       <PasswordField fx:id="pf_password" layoutX="232.0" layoutY="266.0" prefHeight="25.0" prefWidth="190.0" />
-      <Button layoutX="232.0" layoutY="386.0" mnemonicParsing="false" onMouseClicked="#register" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: whitesmoke;" text="Register" AnchorPane.leftAnchor="232.0" />
-      <Text layoutX="218.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add teacher">
+      <Button layoutX="232.0" layoutY="416.0" mnemonicParsing="false" onMouseClicked="#updateTeacher" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: whitesmoke;" text="Update" AnchorPane.leftAnchor="232.0" />
+      <Text layoutX="193.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update teacher">
          <font>
             <Font name="SansSerif Bold" size="35.0" />
          </font>

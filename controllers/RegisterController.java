@@ -55,8 +55,8 @@ public class RegisterController implements Initializable {
             String conf = pf_confirm.getText();
             if(pass.equals(conf)) {
                 Statement st = conn.createStatement();
-                int status = st.executeUpdate("insert into users(firstname,lastname,email,password)"+
-                        " values('"+first+"','"+last+"','"+email+"','"+pass+"')");
+                int status = st.executeUpdate("insert into users(firstname,lastname,email,password,type_id)"+
+                        " values('"+first+"','"+last+"','"+email+"','"+pass+"','"+1+"')");
                 if(status>0){
                     System.out.println("Registered!");
                 }

@@ -30,13 +30,6 @@ public class LoginController implements Initializable {
     @FXML
     private PasswordField pf_pass;
 
-    @FXML
-    void register(MouseEvent event) throws IOException {
-        Parent reg = FXMLLoader.load(getClass().getResource("/app/views/register.fxml"));
-        Node node = (Node) event.getSource();
-        Stage stage = (Stage) node.getScene().getWindow();
-        stage.setScene(new Scene(reg));
-    }
 
     @FXML
     void login(MouseEvent event){
@@ -54,6 +47,8 @@ public class LoginController implements Initializable {
                     Node node = (Node) event.getSource();
                     Stage stage = (Stage) node.getScene().getWindow();
                     stage.setScene(new Scene(home));
+                }else{
+                    System.out.println("Incorrect password");
                 }
             }
         } catch (SQLException e) {
