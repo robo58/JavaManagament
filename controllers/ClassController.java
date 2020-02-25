@@ -54,6 +54,7 @@ public class ClassController implements Initializable {
         Node node = (Node) event.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(reg));
+        stage.setResizable(false);
     }
 
     ObservableList<Class> oblist = FXCollections.observableArrayList();

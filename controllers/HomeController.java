@@ -22,6 +22,7 @@ public class HomeController implements Initializable {
         Node node = (Node) event.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(reg));
+        stage.setResizable(false);
     }
 
     @FXML
@@ -30,6 +31,7 @@ public class HomeController implements Initializable {
         Node node = (Node) event.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(reg));
+        stage.setResizable(false);
     }
 
     @FXML
@@ -38,6 +40,7 @@ public class HomeController implements Initializable {
         Node node = (Node) event.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(reg));
+        stage.setResizable(false);
     }
 
     @FXML
@@ -46,6 +49,7 @@ public class HomeController implements Initializable {
         Node node = (Node) event.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(reg));
+        stage.setResizable(false);
     }
 
     @FXML
@@ -54,6 +58,7 @@ public class HomeController implements Initializable {
         Node node = (Node) event.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(reg));
+        stage.setResizable(false);
     }
 
     @FXML
@@ -62,6 +67,7 @@ public class HomeController implements Initializable {
         Node node = (Node) event.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(reg));
+        stage.setResizable(false);
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

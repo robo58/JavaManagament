@@ -47,6 +47,7 @@ public class LoginController implements Initializable {
                     Node node = (Node) event.getSource();
                     Stage stage = (Stage) node.getScene().getWindow();
                     stage.setScene(new Scene(home));
+                    stage.setResizable(false);
                 }else{
                     System.out.println("Incorrect password");
                 }

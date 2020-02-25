@@ -67,10 +67,11 @@ public class DashboardController implements Initializable {
 
     @FXML
     void home(MouseEvent event) throws IOException {
-        Parent reg = FXMLLoader.load(getClass().getResource("/app/views/Home.fxml"));
+        Parent reg = FXMLLoader.load(getClass().getResource("/app/views/home.fxml"));
         Node node = (Node) event.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(reg));
+        stage.setResizable(false);
     }
 
     @FXML

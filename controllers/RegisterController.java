@@ -42,6 +42,7 @@ public class RegisterController implements Initializable {
         Node node = (Node) event.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
         stage.setScene(new Scene(log));
+        stage.setResizable(false);
     }
 
     @FXML
